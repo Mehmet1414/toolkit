@@ -15,13 +15,7 @@ const Header = () => {
             <Nav.Link>
               <Link to={"/counter"}>Counter App</Link>
             </Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item>Action</NavDropdown.Item>
-              <NavDropdown.Item>Another action</NavDropdown.Item>
-              <NavDropdown.Item>Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item>Separated link</NavDropdown.Item>
-            </NavDropdown>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
