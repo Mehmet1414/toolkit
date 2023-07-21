@@ -1,12 +1,11 @@
 import { Button, Modal, Form, Spinner } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addTask, updateTask } from "../app/crudSlice";
 
 const AddModall = (prop) => {
 
   const dispatch = useDispatch();
-  const { tasks } = useSelector((store) => store.crudReducer);
   // const [isFormEmpty,setIsFormEmpty] = useState(false)
   
   

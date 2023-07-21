@@ -10,17 +10,21 @@ const crudSlice = createSlice({
     initialState,
     reducers:{
         addTask:(state,action)=> {
+
+            console.log(action)
+
             state.tasks = [...state.tasks, action.payload]
-            console.log("state >>>",state.tasks)
+            //console.log("state >>>",state.tasks)
         },
         removeTask:(state,action) =>{
             state.tasks.splice(action.payload,1)
         },
         updateTask: (state, action) => {
             const { id, updatedTask } = action.payload;
+            console.log("updatedTask",updatedTask)
             const index = state.tasks.findIndex((task) => task.id === id);
-            if (index !== -1) {
-              state.tasks[index] = { ...state.tasks[index], ...updatedTask };
+            if (index!==-1) {
+              state.tasks[index] = updatedTask;
             }
           },
        
